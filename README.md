@@ -32,7 +32,7 @@ The following is a screen capture of the tool at work: <br>
 4. [How to contribute](#how-to-contribute)
 5. [Built With](#built-with)
 
-## Installing
+## Installing (MacOS)
 
 1. Verify you have a Java 11 or greater runtime installed.
    1. From a command line, type `java --version` and hit enter to see the version
@@ -42,6 +42,24 @@ The following is a screen capture of the tool at work: <br>
 4. Extract the zip.
 5. Open a terminal and go to the extracted directory, e.g. : <br>
    `cd Downloads/kompromat-1.1.0`
+
+## Installing (Windows 11) <<< WIP >>>
+
+1. install Windows Subsystem for Linux (WSL)
+    1. open a command prompt with administrator rights and type `wsl --install`
+    2. after it completes the download and install automatically in a few minutes, restart your machine
+    3. After the restart it will automatically launch WSL for the first time, taking a few minutes to complete the installation.
+    4. When it is done installing, it will ask you for a username and password. Remember those
+    5. (To launch into WSL in the future when this existing terminal gets lost, either type WSL into the windows search or type WSL into a command prompt and hit enter)
+2. Update the application library and dependencies: Into the WSL prompt enter `sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove` (when asked for elevation/permissions, enter username and password from earlier)
+3. Install Java to the WSL: Enter `sudo apt -y install openjdk-17-jre` which installs the java runtime environment 
+4. Install Google Chrome by typing:
+`wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt -y install ./google-chrome-stable_current_amd64.deb`
+    1. Check that it's installed alright with `google-chrome --version`
+5. Download the compressed zip (not the source code) of the latest release from [here](https://github.com/jamesdh/kompromat/releases/latest).
+6. Extract the zip.
+7. Navigate to the downloaded location by entering `cd /mnt/c/users/yourusername/Downloads/kompromat` or whereever you saved it. Beware that you need to invert the backslashes to normal slashes and prepend the `/mnt/` to your harddrive path.
 
 ## Running
 
