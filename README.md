@@ -54,8 +54,9 @@ The following is a screen capture of the tool at work: <br>
 2. Update the application library and dependencies: Into the WSL prompt enter `sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove` (when asked for elevation/permissions, enter username and password from earlier)
 3. Install Java to the WSL: Enter `sudo apt -y install openjdk-17-jre` which installs the java runtime environment 
 4. Install Google Chrome by typing:
-`wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
-`sudo apt -y install ./google-chrome-stable_current_amd64.deb`
+```wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt -y install ./google-chrome-stable_current_amd64.deb
+```
     1. Check that it's installed alright with `google-chrome --version`
 5. Download the compressed zip (not the source code) of the latest release from [here](https://github.com/jamesdh/kompromat/releases/latest).
 6. Extract the zip.
